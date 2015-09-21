@@ -1,0 +1,4 @@
+build:
+  image: golang:1.5.1
+  commands:
+    - go test -v
