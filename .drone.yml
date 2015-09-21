@@ -1,4 +1,10 @@
 build:
-  image: golang:1.5.1
+  image: golang:$$GO_VERSION
   commands:
     - go test -v
+
+matrix:
+  GO_VERSION:
+    - 1.5
+    - 1.4
+    - 1.3
